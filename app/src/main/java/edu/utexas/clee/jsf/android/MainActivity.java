@@ -1,9 +1,11 @@
-package jsf.clee.utexas.edu.myapplication;
+package edu.utexas.clee.jsf.android;
 
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import jsf.clee.utexas.edu.myapplication.R;
 
 
 public class MainActivity extends Activity {
