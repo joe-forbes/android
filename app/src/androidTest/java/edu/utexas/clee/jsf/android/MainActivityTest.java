@@ -7,12 +7,17 @@ import android.test.ActivityInstrumentationTestCase2;
  */
 public class MainActivityTest extends ActivityInstrumentationTestCase2<MainActivity> {
 
-    public MainActivityTest(Class<MainActivity> activityClass) {
-        super(activityClass);
+    public MainActivityTest() {
+        super(MainActivity.class);
     }
 
-    public void testPrerequisites() {
+    public void testActivityExists() {
         MainActivity activity = getActivity();
         assertNotNull(activity);
+    }
+
+    public void testActivityTitle() {
+        MainActivity activity = getActivity();
+        assertEquals("Android Application", activity.getTitle());
     }
 }
