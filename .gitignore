@@ -1,4 +1,5 @@
 .gradle
+.idea
 build/generated
 build/intermediates
 build/outputs/logs
