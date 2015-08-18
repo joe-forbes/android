@@ -26,4 +26,4 @@ proguard/
 *.log
 
 # Android Studio Navigation editor temp files
-.navigation/
+.navigation/     

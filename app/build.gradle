@@ -6,11 +6,15 @@ android {
     defaultConfig {
         applicationId 'edu.utexas.clee.jsf.android'
         minSdkVersion 21
-        targetSdkVersion 22
+        targetSdkVersion 21
         versionCode 1
         versionName "1.0"
     }
     buildTypes {
+        debug {
+            applicationIdSuffix ".debug"
+            testCoverageEnabled true
+        }
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
@@ -20,7 +24,22 @@ android {
     }
 }
 
+repositories {
+    mavenCentral()
+}
+
 dependencies {
     testCompile 'junit:junit:4.12'
+    testCompile 'org.mockito:mockito-core:2.0.5-beta'
+    testCompile 'com.android.support:support-v4:22.0.0'
+    testCompile "org.robolectric:robolectric:3.0"
+    testCompile ('org.powermock:powermock-api-mockito:1.6.2') {
+        exclude module: 'hamcrest-core'
+        exclude module: 'objenesis'
+    }
+    testCompile ('org.powermock:powermock-module-junit4:1.6.2') {
+        exclude module: 'hamcrest-core'
+        exclude module: 'objenesis'
+    }
     compile fileTree(include: ['*.jar'], dir: 'libs')
 }

@@ -9,6 +9,11 @@ import org.junit.Test;
 public class ScratchClassTest {
 
     @Test
+    public void testTest() {
+        Assert.assertTrue(true);
+    }
+
+    @Test
     public void testScratch() throws Exception {
         ScratchClass scratchClass = new ScratchClass();
         Assert.assertEquals("edu.utexas.clee.jsf.android.ScratchClass", scratchClass.toString());

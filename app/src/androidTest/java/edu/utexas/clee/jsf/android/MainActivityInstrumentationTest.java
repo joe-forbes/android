@@ -5,9 +5,9 @@ import android.test.ActivityInstrumentationTestCase2;
 /**
  * Created by joe on 8/13/15.
  */
-public class MainActivityTest extends ActivityInstrumentationTestCase2<MainActivity> {
+public class MainActivityInstrumentationTest extends ActivityInstrumentationTestCase2<MainActivity> {
 
-    public MainActivityTest() {
+    public MainActivityInstrumentationTest() {
         super(MainActivity.class);
     }
 
@@ -20,4 +20,5 @@ public class MainActivityTest extends ActivityInstrumentationTestCase2<MainActiv
         MainActivity activity = getActivity();
         assertEquals("Android Application", activity.getTitle());
     }
+
 }

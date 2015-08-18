@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import jsf.clee.utexas.edu.myapplication.R;
+import edu.utexas.clee.jsf.android.R;
 
 
 public class MainActivity extends Activity {
